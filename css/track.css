@@ -1,0 +1,48 @@
+/* Tracking page styles */
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#0ea5a4;
+  --muted:#6b7280;
+  --success:#16a34a;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system,"Segoe UI", Roboto, Arial;color:#0f172a;background:var(--bg)}
+.container{max-width:1000px;margin:48px auto;padding:20px}
+.header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.header h1{margin:0;font-size:1.25rem}
+.card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 8px 24px rgba(2,6,23,0.06)}
+.track-form{display:flex;gap:12px;align-items:center}
+.track-form input[type="text"]{flex:1;padding:10px 12px;border:1px solid #e6e9ef;border-radius:8px;font-size:1rem}
+.track-form button{padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer}
+
+.status-panel{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+@media (max-width:860px){.status-panel{grid-template-columns:1fr;}}
+
+.timeline{display:flex;flex-direction:column;gap:18px}
+.timeline .step{display:flex;gap:12px;align-items:flex-start}
+.step .marker{min-width:40px;height:40px;border-radius:999px;background:#e6eef0;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
+.step .content{flex:1}
+.step .content h3{margin:0;font-size:1rem}
+.step .content p{margin:6px 0 0;color:var(--muted);font-size:0.95rem}
+
+.progress{height:12px;background:#eef2f6;border-radius:999px;overflow:hidden;margin-top:12px}
+.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#0b9489);width:0%}
+
+.product-card{display:flex;flex-direction:column;gap:10px}
+.product-card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.product-meta{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.product-meta .title{font-weight:700}
+.product-meta .badge{background:#f1f5f9;padding:6px 10px;border-radius:999px;color:var(--muted);font-size:0.9rem}
+
+.small{font-size:0.9rem;color:var(--muted)}
+
+/* status colors */
+.step.done .marker{background:linear-gradient(90deg,var(--success),#059669);color:#fff}
+.step.active .marker{background:var(--accent);color:#fff}
+
+/* accessible focus */
+.track-form input:focus,.track-form button:focus{outline:3px solid rgba(14,165,164,0.12);outline-offset:2px}
+
+/* reduced motion */
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}

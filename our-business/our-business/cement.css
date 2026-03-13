@@ -1,0 +1,253 @@
+/*Importing Goggle Fonts */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+:root{
+
+    /*Colors */
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --light-yellow:#F79C00;
+    --light-green:#00784a;
+   --light-blue-two: #004586;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+   --light-blue: #100d5c;
+   --black:#212144;
+   --min-white:#f5f5f5;
+    --light-red:#ec020c;
+    --red-two:#e70034;
+    --light-black:#252525;
+
+
+
+    /*Font-Family */
+    --font-heading:'Montserrat', sans-serif;
+    --font-body:'Open Sans', sans-serif;
+
+      /* font size*/
+         --font-size-t:0.7rem;
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-1:1.5rem;
+    --font-size-x1:2rem;
+    --font-size-xx1:3rem;
+    
+
+    /* font weight*/
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    /*Border radius*/
+    --border-radius-s:8px;
+    --border-radius-m:30px
+    --boder-radius-circle:50%;
+
+
+    /*site max width */
+    --site-max-width:1300px
+
+}
+
+
+/*Styling for the whole site*/
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+
+/*Hero Section Styling */
+.cement-hero-section {
+    position: relative;
+    background-image:url(/Images/f62b76e036dad560ebc06e698921bdca.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 100%;
+    padding-top: 80px;
+    display: flex;
+   
+}
+
+.cement-hero-section .cement-hero-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rem;
+    text-align: center;
+    align-items: center;
+    color:var(--white);       
+    gap: 25px;
+   
+}
+ .cement-hero-section .cement-hero-details .title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xx1);
+    
+ }
+
+  .cement-hero-section .cement-hero-details .subtitle{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+ }
+
+ /*About Dangote Cement*/
+ .about-cement{
+    padding: 200px 0;
+ }
+ .about-cement .about-cement-details{
+    display: flex;
+ flex-direction: column;
+    gap: 40px;
+    padding-left: 10rem;
+ }
+.about-cement .about-cement-details .about-cement-heading{
+    font-size: var(--font-size-x1);
+    color: var(--light-blue);
+    font-family: var(--font-heading);
+}
+
+.about-cement .about-cement-details .about-cement-text{
+    max-width: 70%;
+    font-family: var(--font-body);
+    font-size: var(--font-size-s);
+}
+
+
+ /*Key Business Facts*/
+   .key-figures{
+        padding: 120px 0;
+        background-color: var(--min-white);
+       
+    }
+    .key-figures .section-content{
+    padding: 0 250px;
+}
+    
+ .key-figures .key-figures-heading{
+        font-size: var(--font-size-xx1);
+        color:var(--light-blue);
+        font-family: var(--font-heading);
+        margin-bottom: 35px;
+         text-align: center;
+
+    }
+.key-figures-grid{
+        display: flex;
+        flex-direction: row;
+        align-items:  stretch;
+        gap: 10px;    
+     
+    }
+.key-figures-card{
+        border:1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center; 
+        align-items: center; 
+        text-align: center;
+        padding: 20px;
+        margin: 10px;
+        background-color: var(--white);
+        width:300px;
+        height: 250px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+    .key-figures-card:hover{
+    transform: translateY(-5px); /* movess up 10px */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    }
+    .key-figures .key-figures-card .key-figures-title{
+        font-size: var(--font-size-1);
+        font-family: var(--font-heading);
+
+    }
+ 
+    .key-figures .key-figures-card .key-figures-subtitle{
+        font-size: var(--font-size-s);
+        color: var(--light-black);
+           font-family: var(--font-heading);
+    }
+     
+    /*Brand Showcase */
+    .brand-showcase{
+        padding: 120px 0;
+    }
+   .brand-showcase .brand-heading{
+      font-size: var(--font-size-xx1);
+        color:var(--light-blue);
+        font-family: var(--font-heading);
+        margin-bottom: 35px;
+         text-align: center;
+   }
+
+   .brand-showcase .brand-grid{
+        display: flex;
+        flex-direction: row;
+        gap: 100px
+   }
+   .brand-showcase .brand-grid .brand-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+   }
+   .brand-showcase .brand-card .brand-text{
+    font-size: var(--font-size-1);
+    color: var(--light-blue);
+   }
+.brand-showcase .section-content{
+    padding: 0 250px;
+}

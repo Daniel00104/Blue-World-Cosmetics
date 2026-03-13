@@ -1,0 +1,395 @@
+/*Importing Goggle Fonts */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+:root{
+
+    /*Colors */
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+     --light-yellow:#F79C00;
+    --light-green:#00784a;
+   --light-blue-two: #004586;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+   --light-blue: #100d5c;
+   --black:#212144;
+   --min-white:#f5f5f5;
+   --light-red:#ec020c;
+     --red-two:#e70034;
+       --light-black:#252525;
+
+
+
+    /*Font-Family */
+    --font-heading:'Montserrat', sans-serif;
+    --font-body:'Open Sans', sans-serif;
+
+      /* font size*/
+      --font-size-t:0.7rem;
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-1:1.5rem;
+    --font-size-x1:2rem;
+    --font-size-xx1:3rem;
+    
+
+    /* font weight*/
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    /*Border radius*/
+    --border-radius-s:8px;
+    --border-radius-m:30px
+    --boder-radius-circle:50%;
+
+
+    /*site max width */
+    --site-max-width:1300px
+
+}
+
+
+/*Styling for the whole site*/
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+/*About Us Section */
+
+.about-hero-section{
+    background: url;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.about-hero-section .hero-collage{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.business-text{
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.about-hero-section .hero-collage .collage{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 100%;   
+    
+}
+.about-hero-section .collage .collage-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-hero-section .about-hero-section-text{
+    position: absolute ;
+    z-index: 2;
+    transform: translate(-50%, 50%);
+    color:var(--white);
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+
+.about-hero-section-text .about-hero-section-heading{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+    font-weight: var(--font-weight-bold);
+}
+.about-hero-section-text .about-hero-section-subtitle{
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+}
+
+    /*Mission & Vission */
+    .mission-vision{
+        padding: 150px 0;
+    }
+    .mission-vision .section-content{
+            display: flex;
+        flex-direction: column;
+        gap:20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .mission-text{
+        display: flex;
+        flex-direction: row ;
+        gap: 10px;
+        width: 55%;
+        line-height: 30px;
+    
+    }
+    .mission-vision .mission-heading{
+        font-family: var(--font-heading);
+        font-size: var(--font-size-1);
+    }
+    .mission-vision .mission-title{
+        font-family: var(--font-heading);
+        font-size: var(--font-size-x1);
+    }
+    .mission-vision .mission-text{
+        font-family: var(--font-heading);
+        font-size: var(--font-size-m);
+    }
+
+    .about-us-image-section{
+        width: 300px;
+        height: 150px;
+        overflow: hidden;
+    }
+    .news-image-card{
+    background: linear-gradient(270deg, #2981E9 0%, #3C48DD 100%);
+    display: inline-flex;
+    align-items: center;
+    padding: 20px 30px;
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+}
+    
+
+/*President Section Styling */
+.president-section{
+    padding: 120px 0;
+    background-color: #343a40;
+    color: var(--white);
+}
+
+.president-section .president-details{
+    display: flex;
+    gap: 150px;
+}
+.president-section .president-info-side .president-text-heading{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+}
+.president-section .president-info-side .president-text-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+
+}
+
+.president-section .president-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.president-section .president-info-side{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.president-info-text{
+    width: 50%;
+    font-family: var(--font-body);
+    font-size: var(--font-size-s);
+}
+.president-divider{
+    border: none;
+    border-top: 2px solid #fff;
+     width: 54%;
+  
+} 
+.read-more-box{
+    display: inline-flex;     
+  align-items: center;         
+  overflow: hidden;         
+  text-decoration: none;
+  cursor: pointer;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.read-more-box .read-text {
+  padding: 20px 20px;
+  background-color:var(--white);  
+    color: var(--light-blue);     
+    font-family: var(--font-body);       
+    font-size: var(--font-size-s);
+
+ }
+.read-more-box .read-arrow {
+  padding: 20px 20px;
+  background-color: var(--light-blue);
+  color:var(--white);
+  
+ }
+
+.read-more-box .read-arrow i {
+  transform: translateX(10px); 
+  transition: transform 0.15s ease-in-out, color 0.15s ease;
+ }
+
+ /*Executive Leadership */
+ .leadership-section{
+    padding: 120px 0;
+    align-items: center;
+ }
+
+.leadership-section .leadership-heading{
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+    color: var(--light-blue);
+}
+.leadership-section .leadership-heading::after{
+        content: "";
+        width: 100px;
+        height: 4px;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 8px ;
+        background:var(--light-red);
+    }
+    .leadership-section .leadership-subtitle{
+    text-align: center;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-s);
+    color: var(--black);
+    line-height: 20px;
+    
+}
+
+ .leadership-section .leadership-image-card{
+    display:inline-flex;
+    flex-wrap: wrap;
+        gap:20px; 
+    background-color: var(--white);
+     padding: 50px;
+    justify-content: space-between;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); 
+  
+    
+   
+ }
+ .leadership-section .leadership-image-card .leadership-image-card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% / 3 - 20px);
+    
+    }
+.leadership-section .leadership-image-card .leadership-image-card-info .leadership-name{
+   font-size: var(--font-size-n); 
+   font-family: var(--font-heading);
+}
+.leadership-section .leadership-image-card .leadership-image-card-info .leadership-mission-title{
+   font-size: var(--font-size-t); 
+   font-family: var(--font-heading);
+   text-align: center;
+}
+/*History & Strategy*/
+.history-section .section-content{
+    margin-bottom: 5rem;
+}
+.history-section .history-heading{
+    font-size: var(--font-size-x1);
+    font-family: var(--font-heading);
+    color: var(--light-blue);
+    margin-bottom: 2rem;
+}
+.history-card{
+    padding-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.history-card .history-one{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    
+}
+.history-card .history-two{
+    display: flex;
+    flex-direction: row;
+    
+}
+.history-card .history-two .history-two-text{
+    width:40%;
+    line-height: 28px;
+    margin-top: 20px;
+    font-size: var(--font-size-m);
+    margin-left: -170px;
+}
+.history-card .history-one .history-text{
+    width: 40%;
+    line-height: 28px;
+    margin-top: 50px;
+    font-size: var(--font-size-m);
+}
+.history-one-image-wrapper{
+    width: 40%;
+}
+.history-two-image-wrapper{
+    width: 60%;
+}
+.history-one-image-wrapper img{
+    width: 100%;
+}
+.history-two-image-wrapper img{
+    width: 70%;
+}
+.history-one-heading{
+    font-size: var(--font-size-m);
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+}

@@ -1,0 +1,344 @@
+/*Importing Goggle Fonts */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+
+}
+:root{
+
+    /*Colors */
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --light-yellow:#F79C00;
+    --light-green:#00784a;
+   --light-blue-two: #004586;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+   --light-blue: #100d5c;
+   --black:#212144;
+   --min-white:#f5f5f5;
+    --light-red:#ec020c;
+    --red-two:#e70034;
+    --light-black:#252525;
+
+
+
+    /*Font-Family */
+    --font-heading:'Montserrat', sans-serif;
+    --font-body:'Open Sans', sans-serif;
+
+      /* font size*/
+         --font-size-t:0.7rem;
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-1:1.5rem;
+    --font-size-x1:2rem;
+    --font-size-xx1:3rem;
+    
+
+    /* font weight*/
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    /*Border radius*/
+    --border-radius-s:8px;
+    --border-radius-m:30px
+    --boder-radius-circle:50%;
+
+
+    /*site max width */
+    --site-max-width:1300px
+
+}
+
+
+/*Styling for the whole site*/
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+/*Header/ Navbar Styling */
+header .navbar{
+   display: flex;
+   padding: 20px;
+   align-items: stretch;
+   justify-content: space-between;
+}
+
+.navbar .nav-menu{
+    display: flex;
+    gap: 2px;;
+    align-items: center;
+}
+.navbar .nav-menu .nav-items .nav-link{
+    padding:10px;
+     color: var(--white);
+    font-size:var(--font-size-n);
+    font-family: var(--font-body);
+    align-items: center;
+}
+.navbar .nav-logo{
+position: relative;
+  display: inline-block;
+  height: 40px;
+}
+.navbar .nav-logo img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition:  0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    background: transparent;
+
+}
+
+
+.logo-dark {
+  display: none; 
+}
+
+header.scrolled {
+  background: white;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+}
+
+header.scrolled .logo-light {
+  display: none;
+}
+
+header.scrolled .logo-dark {
+  display: block;
+}
+header.scrolled .nav-menu .nav-items .nav-link {
+    padding:10px;
+     color: var(--light-blue);
+    font-size:var(--font-size-n);
+    font-family: var(--font-body);
+    align-items: center;
+ 
+}
+
+
+/*Hero Section Styling */
+.our-business-hero-section {
+    position: relative;
+    background-image: url(/Images/oil\ refinery.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    padding-top: 80px;
+    display: flex;
+   
+}
+
+.our-business-hero-section .our-business-hero-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rem;
+    padding-left:250px;
+    color:var(--white);       
+    gap: 25px;
+   
+}
+ .our-business-hero-section .our-business-heading{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-n);
+    
+ }
+.our-business-hero-section .our-business-hero-details .our-business-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+    
+ }
+
+  .our-business-hero-section .our-business-subtitle{
+    font-family: var(--font-body);
+    font-size: var(--font-size-n);
+    line-height: 20px;
+    max-width: 40%;
+ }
+
+ /*Business Service Section Styling */
+ .business-service{
+   padding: 150px 0;
+ }
+.business-service .business-service-container{
+    display: flex;
+    justify-content: center;
+    margin-left: 10rem;
+}
+.business-service .business-service-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 1000px;
+    padding: 0;
+}
+ .business-service .business-service-grid .business-card{
+    position: relative;
+    width: calc(33.33% - 10px);
+}
+  .business-service .business-service-grid .business-card .business-image{
+    width:80%;
+    height: auto;
+    object-fit: cover;
+}
+ .business-service .business-service-grid .business-card .business-card-details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    top: 50%;
+    left:50px;
+    color: var(--white);
+}
+ .business-service .business-service-grid .business-card-details h3{
+    display: flex;
+    gap: 10px;
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+}
+ .business-service .business-service-grid .business-card-details .big{
+   width: 2px;
+   height: 50px;
+   border: 1px solid #fff;
+}
+
+  .business-service .business-service-grid .business-card-details .bigs{
+   width: 2px;
+   height: 70px;
+   border: 1px solid #fff;
+}
+
+ .business-service .business-card-details .biz-button{
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: var(--font-size-s);
+    margin-left:-12px;
+    
+}
+
+.business-service .business-card-details .biz-button i {
+  transform: translateX(10px); 
+  transition: transform 0.15s ease-in-out, color 0.15s ease;
+ }
+
+
+ /*Key Business Facts*/
+   .key-features{
+        padding: 120px 0;
+        background-color: var(--min-white);
+    }
+    
+ .key-features .key-features-heading{
+        font-size: var(--font-size-xx1);
+        color:var(--light-blue);
+        font-family: var(--font-heading);
+        margin-bottom: 20px;
+
+    }
+.key-features-grid{
+        display: flex;
+        flex-direction: row;
+        align-items:  center;
+        gap: 10px;      
+    }
+.key-features-card{
+        border:1px solid #fff;
+        padding: 20px;
+        margin: 10px;
+        background-color: var(--white);
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+    .key-features .key-features-card .core-title{
+        font-size: var(--font-size-s);
+        margin-top: 10px;
+        font-family: var(--font-body);
+
+    }
+    .key-features .key-features-card .core-image{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    
+    .key-features .key-features-card .core-text{
+        font-size: var(--font-size-m);
+        margin-top: 30px;
+        color: var(--light-black);
+        font-weight: var(--font-weight-bold);
+           font-family: var(--font-heading);
+    }
+     .key-features .key-features-card .core-title-one{
+        font-size: var(--font-size-s); 
+        color: var(--light-black);
+        font-family: var(--font-body);
+    }
+     .key-features .key-features-card .core-text-one{
+        font-size: var(--font-size-m);
+        margin-top: 20px;
+        color: var(--light-black);
+        font-weight: var(--font-weight-bold);
+           font-family: var(--font-heading);
+    }
