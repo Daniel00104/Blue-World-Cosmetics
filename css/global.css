@@ -722,14 +722,15 @@ display: grid;
 }
 /*Impacting Lives Styling Section*/
 .impacting-lives{
-    background:url(/Images/General-2--1024x689.jpg) ;
-    background-size: contain;
+    background: url(/Images/General-2--1024x689.jpg) center/cover no-repeat;
     min-height: 100vh;
-    padding-left: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
 }
+
 .impacting-live-text{
     background-color: var(--white);
     padding: 120px;
@@ -1167,6 +1168,11 @@ font-size: var(--font-size-m);
     }
     
     /* Impacting lives */
+    
+     .impacting-lives {
+        padding-left: 10px;
+        
+    }
     .impacting-live-text {
         padding: 60px 40px;
     }
@@ -1211,6 +1217,12 @@ font-size: var(--font-size-m);
     }
     
     /* Impacting lives */
+    .impacting-lives{
+        padding: 40px 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
     .impacting-live-text {
         padding: 40px 20px;
         max-width: 100%;
@@ -1230,4 +1242,11 @@ font-size: var(--font-size-m);
     .bottom-card {
         padding: 20px;
     }
+    /* Mobile */
+@media (max-width: 768px){
+    .impacting-lives{
+        justify-content: center;
+        text-align: center;
+    }
+}
 }

@@ -100,8 +100,14 @@ html{
 
 /*About Us Section */
 
+.impacting-lives-text{
+    text-align: justify;
+    font-weight: 300;
+}
+    
+
 .banner1-container {
-    background-image: url(/Images/iStock-1217355516.jpg);
+    background-image: url(/Images/DodoGold.jpg);
     background-color: #fffefe;
     backface-visibility: hidden;
     min-height: 70vh;
@@ -110,7 +116,8 @@ html{
     margin-top: 80px;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(100%);
+    filter: brightness(120%);
+    display: overlay;
     color:var(--white);
     position: relative;
     align-items: center;
