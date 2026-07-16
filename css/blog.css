@@ -17,6 +17,13 @@ body {
   color: var(--primary);
 }
 
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  background: var(--bg);
+  color: var(--primary);
+}
+
 /* Navigation */
 .navbar {
   position: fixed;
