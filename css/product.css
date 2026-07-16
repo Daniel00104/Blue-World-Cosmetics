@@ -203,3 +203,9 @@ font-size: var(--font-size-m);
     height: auto;
 
 }
+
+.footer-info{
+    display: flex;
+    justify-content:space-between;
+    gap: 25px;
+    margin-top: 20px;
