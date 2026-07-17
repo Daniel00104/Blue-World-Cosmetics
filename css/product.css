@@ -198,6 +198,13 @@ font-size: var(--font-size-m);
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-bold);
 }
+
+.footer-info-text{
+      font-family: var(--font-body);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-bold);
+}
+
 .footer-section img{
     width:5%;
     height: auto;
