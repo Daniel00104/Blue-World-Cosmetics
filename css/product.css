@@ -49,13 +49,11 @@ button:focus,input:focus,a:focus{outline:3px solid rgba(244,114,182,0.14);outlin
     background-image: url(/Images/soap.jfif);
     background-color: #fffefe;
     backface-visibility: hidden;
-    min-height: 70vh;
-    justify-content: center;
+    min-height: 100vh;
     text-align: center;
-    margin-top: 80px;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(100%);
+    filter: brightness(220%);
     color:var(--white);
     position: relative;
     align-items: center;
