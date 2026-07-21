@@ -786,10 +786,10 @@ display: grid;
     background-color: #5a2e14;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    min-height: 80vh;
+    background-position: cover;
+    min-height: 70vh;
     color: var(--white);
-    padding: 120px 0 40px; 
+    padding:100px; 
 } 
  
 
