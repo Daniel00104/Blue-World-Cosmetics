@@ -71,6 +71,7 @@ button:focus,input:focus,a:focus{outline:3px solid rgba(244,114,182,0.14);outlin
 
 .banner-text{
     position:relative;
+    text-align:center;
 }
 
 .banner-text h1{

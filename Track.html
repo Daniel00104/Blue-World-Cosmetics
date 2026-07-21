@@ -3,16 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="track.css">
+    <title>Track Your Order - Blueworld</title>
+    <link rel="stylesheet" href="tracking.css">
 </head>
-<body >
-<div class="upperbody">
-    <form class="form" action="track.html" method="get">
-        <label for="prod-id">Input Product Id</label>
-        <input id="prod-id" type="text" name="id" placeholder="Input Product id" class="product-input">
-        <button type="submit" class="submit-btn">Submit</button>
-    </form>
-</div>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"> Blueworld</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Orders</a>
+                <a href="#" class="active">Track Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tracking-hero">
+            <h1>Track Your Order</h1>
+            <p>Enter your order number to see real-time updates</p>
+            
+            <div class="search-box">
+                <input type="text" id="orderId" placeholder="Enter Order ID (e.g., ORD-123456)" maxlength="12">
+                <button id="trackBtn">Track Order</button>
+            </div>
+            
+            <div id="error-message" class="error"></div>
+        </section>
+
+        <section id="order-details" class="order-details hidden">
+            <!-- Populated by JS -->
+        </section>
+    </main>
+
+    <section class="footer">
+        <div class="section-content">
+            <div class="footer-nav">
+                <h3 class="footer-nav-title">COMPANY</h3>
+                <ul class="footer-links">
+                    <li class="footer-nav-link">
+                        <a href="about-us.html" class="footer-link">About us</a>
+                    </li>
+                     <li class="footer-nav-link">
+                        <a href="#products" class="footer-link">Our Products</a>
+                    </li>
+                     <li class="footer-nav-link">
+                        <a href="#sustainability" class="footer-link">Our Mission</a>
+                    </li>
+                     <li class="footer-nav-link">
+                        <a href="#sustainability" class="footer-link">Our Vision</a>
+                    </li>
+                     <li class="footer-nav-link">
+                        <a href="#sustainability" class="footer-link">Our Core Values</a>
+                    </li>
+                    
+                </ul>
+            </div>         
+            <div class="footer-nav">
+                <h3 class="footer-nav-title">PRODUCTS</h3>
+                <ul class="footer-links">
+                    <li class="footer-nav-link">
+                        <a href="#" class="footer-link">Facials</a>
+                    </li>
+                     <li class="footer-nav-link">
+                        <a href="#" class="footer-link">Skin Care</a>
+                    </li>
+                     <li class="footer-nav-link">
+                        <a href="#" class="footer-link">Body Lotions/Wash</a>
+                    </li>
+                     <li class="footer-nav-link">
+                        <a href="#" class="footer-link">Hair Products</a>
+                     </li>
+                      
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3 class="footer-contact-title">GENERAL INQUIRIES</h3>
+                <ul class="footer-contact-links">
+                   <li class="footer-contact-link">
+                   <p class="contact-info"> Call: +234 1 448 0815 ,  +234 1 448 0816</p>
+                   </li>
+                      <li class="footer-contact-link">
+                   <p class="contact-info"> Fax: +234 1 463 0316 ,  +234 1 271 2231</p>
+                   </li>
+                   <li class="footer-contact-link">
+                   <p class="contact-info"> Email: communications@Blueworld.com</p>
+                   </li>
+                   <div class="socials">
+                     <li class="footer-social-links">
+                     <a href   ="#" class="social-link"> <i class ="fa-brands
+                         fa-facebook"> </i></a>
+                    <a href="#" class="social-link"> <i class ="fa-brands
+                         fa-instagram"> </i></a>
+                    <a href="#" class="social-link"> <i class ="fa-brands 
+                        fa-x-twitter"> </i></a>
+
+                    </li>
+                   </div>
+                  
+                </ul>
+            </div>
+
+               <div class="footer-newsletter">
+                <h3 class="footer-newsletter-title">NEWSLETTER</h3>
+                <ul class="footer-news">
+                    <li class="footer-news-text">
+                        <p class="new-text">Join our weekly mailing list</p>
+                    </li>
+                     <li class="footer-subscribe">
+                        <div class="footer-subscribe-wrap">
+                            <input type="email" placeholder="Your email">
+                            <button>Subscribe</button>
+                        </div>
+                    </li>
+        
+                </div>
+        </div>
+    
+          <hr class="footer-divider">
+             <div class="footer-section">
+                <div class="section-content">
+                    <img class="footer-image" src="Images/BW LOGO.png" alt="bw logo">
+                    <div class="footer-info">
+                        <p class="footer-info-text"> &copy; 2026 Blue world Cosmetics.</p>
+                         <p class="footer-info-text">Terms Of Use.</p>
+                          <p class="footer-info-text">Privacy Policy</p>
+                    </div>
+                </div>
+                    
+
+        </section>
+
+    <script src="tracking.js"></script>
 </body>
 </html>

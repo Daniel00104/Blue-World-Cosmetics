@@ -328,6 +328,7 @@ header.scrolled .nav-menu .nav-link i {
     backface-visibility: hidden;
     min-height: 100vh;
     background-repeat: no-repeat;
+    text-align: center;
     background-size: cover;
     filter: brightness(220%);
     color:var(--white);
