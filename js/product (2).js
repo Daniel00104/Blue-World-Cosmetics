@@ -71,3 +71,37 @@ const addBtn = document.getElementById('addBtn');
 			const prodId = '12345';
 			trackBtn.href = 'track.html?id=' + encodeURIComponent(prodId);
 		})();
+
+    // Simple cart state
+let cart = [];
+
+// Update cart count
+function updateCartCount() {
+  const countEl = document.getElementById('cart-count');
+  countEl.textContent = cart.length;
+}
+
+// Add item to cart (example function)
+function addToCart(product) {
+  cart.push(product);
+  updateCartCount();
+  
+  // Optional: show a quick toast
+  showToast(`${product.name} added to cart!`);
+}
+
+// Example usage
+// addToCart({ id: 1, name: "Wireless Headphones" });
+
+// Toast notification (optional)
+function showToast(message) {
+  const toast = document.createElement('div');
+  toast.style.cssText = `
+    position: fixed; bottom: 20px; right: 20px; background: #27ae60; color: white;
+    padding: 12px 20px; border-radius: 6px; z-index: 1000;
+  `;
+  toast.textContent = message;
+  document.body.appendChild(toast);
+  
+  setTimeout(() => toast.remove(), 2500);
+}

@@ -129,6 +129,8 @@ header .navbar{
 position: relative;
   display: inline-block;
   height: 40px;
+  justify-content: center;
+  align-items   : center;
 }
 .navbar .nav-logo img {
   height: 100%;
@@ -783,22 +785,28 @@ display: grid;
 }
 /*Footer Section Styling */
 .footer{
-    width: 100%;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
     background-color: #5a2e14;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: cover;
+    background-position: center;
     min-height: 70vh;
     color: var(--white);
-    padding:100px; 
+    padding: 100px 40px;
+    box-sizing: border-box;
 } 
  
 
 .footer .section-content{
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
     display: flex;
     gap: 30px;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-nav{
     margin-bottom: 2rem;
