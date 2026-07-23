@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Blue World Cosmetics</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body class="cart-page">
+  <header>
+    <nav class="navbar section-content">
+      <a href="index.html" aria-label="Blue World Cosmetics home">
+        <div class="nav-logo"><img class="logo" src="Images/BW LOGO.png" alt="Blue World Logo"></div>
+      </a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-items"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-items"><a href="about-us.html" class="nav-link">About Us</a></li>
+        <li class="nav-items"><a href="Product.html" class="nav-link">Products</a></li>
+        <li class="nav-items"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        <li class="nav-items"><a href="Tracker.html" class="nav-link">Tracker</a></li>
+        <li class="nav-items">
+          <a href="cart.html" class="cart-icon-container" aria-label="Shopping cart">
+            <i class="fas fa-shopping-cart"></i><span class="cart-count" id="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="cart-main section-content">
+    <div class="cart-heading">
+      <div>
+        <p class="eyebrow">Your selections</p>
+        <h1>Shopping cart</h1>
+      </div>
+      <a class="continue-shopping" href="Product.html"><i class="fa-solid fa-arrow-left"></i> Continue shopping</a>
+    </div>
+
+    <div id="cart-empty" class="cart-empty" hidden>
+      <i class="fa-solid fa-bag-shopping"></i>
+      <h2>Your cart is waiting</h2>
+      <p>Add something lovely from our product collection.</p>
+      <a class="cart-button" href="Product.html">Browse products</a>
+    </div>
+
+    <div class="cart-layout">
+      <section id="cart-items" class="cart-items" aria-live="polite"></section>
+      <aside id="cart-summary" class="cart-summary" hidden>
+        <h2>Order summary</h2>
+        <div class="summary-line"><span>Subtotal</span><strong id="cart-subtotal">$0.00</strong></div>
+        <div class="summary-line"><span>Delivery</span><span>Calculated at checkout</span></div>
+        <hr>
+        <div class="summary-line total"><span>Total</span><strong id="cart-total">$0.00</strong></div>
+        <button class="cart-button checkout-button" type="button">Proceed to checkout <i class="fa-solid fa-arrow-right"></i></button>
+        <p class="secure-note"><i class="fa-solid fa-lock"></i> Secure checkout</p>
+      </aside>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

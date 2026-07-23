@@ -81,17 +81,20 @@ dots.forEach((dot, index) => {
 });
 
 // Auto-play carousel (optional - every 5 seconds)
-let autoPlayInterval = setInterval(nextSlide, 5000);
+let autoPlayInterval;
+if (totalSlides > 1) {
+  autoPlayInterval = setInterval(nextSlide, 5000);
+}
 
 // Pause auto-play on hover
 const carouselContainer = document.querySelector('.carousel-container');
 if (carouselContainer) {
   carouselContainer.addEventListener('mouseenter', () => {
-    clearInterval(autoPlayInterval);
+    if (autoPlayInterval) clearInterval(autoPlayInterval);
   });
 
   carouselContainer.addEventListener('mouseleave', () => {
-    autoPlayInterval = setInterval(nextSlide, 5000);
+    if (totalSlides > 1) autoPlayInterval = setInterval(nextSlide, 5000);
   });
 }
 
