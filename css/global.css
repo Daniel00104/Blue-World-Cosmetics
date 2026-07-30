@@ -639,7 +639,7 @@ color: var(--light-blue);
 
 /*Sustainability Section */
 .sustainability-section{
-    background: url(/Images/iStock-1308229995.jpg);
+    background: url(../Images/iStock-1308229995.jpg);
     filter: brightness(70%);
     background-color: #070707;
     backface-visibility: hidden;
