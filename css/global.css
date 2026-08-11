@@ -329,10 +329,11 @@ header.scrolled .nav-menu .nav-link i {
     background-color: #fffefe;
     backface-visibility: hidden;
     min-height: 100vh;
+    height: 100%;
     background-repeat: no-repeat;
     text-align: center;
     background-size: cover;
-    filter: brightness(220%);
+    filter: brightness(120%);
     color:var(--white);
     position: relative;
     align-items: center;
